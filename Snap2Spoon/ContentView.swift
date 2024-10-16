@@ -16,6 +16,7 @@ struct ContentView: View {
             Text("Snap2Spoon!")
         }
         .padding()
+        .foregroundColor(.yellow)
     }
 }
 
