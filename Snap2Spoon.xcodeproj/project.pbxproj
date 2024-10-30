@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14B50BE2CD1CA1A00929A23 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B50BD2CD1CA1A00929A23 /* Homepage.swift */; };
+		D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */; };
 		D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */; };
 		D15D68D52CC060D000E57708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D42CC060D000E57708 /* ContentView.swift */; };
 		D15D68D72CC060D300E57708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15D68D62CC060D300E57708 /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D14B50BD2CD1CA1A00929A23 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scripto-2OR2v.ttf"; sourceTree = "<group>"; };
 		D15D68CF2CC060D000E57708 /* Snap2Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap2Spoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2SpoonApp.swift; sourceTree = "<group>"; };
 		D15D68D42CC060D000E57708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +42,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D14B50C02CD1E47C00929A23 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D15D68C62CC060D000E57708 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +75,7 @@
 				D15D68D42CC060D000E57708 /* ContentView.swift */,
 				D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */,
 				D15D68D62CC060D300E57708 /* Assets.xcassets */,
+				D14B50C02CD1E47C00929A23 /* Fonts */,
 				D15D68D82CC060D300E57708 /* Preview Content */,
 			);
 			path = Snap2Spoon;
@@ -96,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D15D68E92CC0629400E57708 /* ExampleView.swift */,
+				D14B50BD2CD1CA1A00929A23 /* Homepage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -159,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D15D68DA2CC060D300E57708 /* Preview Assets.xcassets in Resources */,
+				D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */,
 				D15D68D72CC060D300E57708 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +188,7 @@
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
+				D14B50BE2CD1CA1A00929A23 /* Homepage.swift in Sources */,
 				D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */,
 				D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */,
 			);
