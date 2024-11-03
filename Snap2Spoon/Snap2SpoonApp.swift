@@ -11,7 +11,7 @@ import SwiftUI
 struct Snap2SpoonApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Homepage()
         }
     }
     

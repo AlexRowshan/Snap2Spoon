@@ -1,0 +1,15 @@
+{
+  "originHash" : "7cc986648c50a8c47da81bb75c3cc95bffa5886ac65f7e88d996328e04202629",
+  "pins" : [
+    {
+      "identity" : "openaiswift.git?ref=createwithswift.com",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/adamrushy/OpenAISwift.git?ref=createwithswift.com",
+      "state" : {
+        "revision" : "ca66fb720d6ebb657601db5a0852b830ae310a4c",
+        "version" : "1.4.1"
+      }
+    }
+  ],
+  "version" : 3
+}
