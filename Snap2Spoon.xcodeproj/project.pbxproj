@@ -3,11 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D14B50BE2CD1CA1A00929A23 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B50BD2CD1CA1A00929A23 /* Homepage.swift */; };
+		0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */; };
+		0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D4852CD7125A007A28C1 /* CameraError.swift */; };
+		0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */; };
+		0720D4AE2CD75718007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4AD2CD75718007A28C1 /* OpenAISwift */; };
+		0720D4B02CD75730007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4AF2CD75730007A28C1 /* OpenAISwift */; };
+		0720D4B22CD7573D007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4B12CD7573D007A28C1 /* OpenAISwift */; };
+		0720D4B42CD7578B007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4B32CD7578B007A28C1 /* OpenAISwift */; };
+		0720D4B62CD75A85007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4B52CD75A85007A28C1 /* OpenAISwift */; };
+		0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D4B72CD7650F007A28C1 /* Photo.swift */; };
 		D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */; };
 		D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */; };
 		D15D68D52CC060D000E57708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D42CC060D000E57708 /* ContentView.swift */; };
@@ -19,7 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D14B50BD2CD1CA1A00929A23 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
+		0720D47C2CD70B2F007A28C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		0720D4852CD7125A007A28C1 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
+		0720D4B72CD7650F007A28C1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scripto-2OR2v.ttf"; sourceTree = "<group>"; };
 		D15D68CF2CC060D000E57708 /* Snap2Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap2Spoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2SpoonApp.swift; sourceTree = "<group>"; };
@@ -31,11 +43,22 @@
 		D15D68E92CC0629400E57708 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0720D48F2CD713CB007A28C1 /* Camera */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Camera; sourceTree = "<group>"; };
+		0720D4912CD713D6007A28C1 /* Homepage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Homepage; sourceTree = "<group>"; };
+		0720D4A32CD720A1007A28C1 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		D15D68CC2CC060D000E57708 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0720D4B42CD7578B007A28C1 /* OpenAISwift in Frameworks */,
+				0720D4B62CD75A85007A28C1 /* OpenAISwift in Frameworks */,
+				0720D4B02CD75730007A28C1 /* OpenAISwift in Frameworks */,
+				0720D4B22CD7573D007A28C1 /* OpenAISwift in Frameworks */,
+				0720D4AE2CD75718007A28C1 /* OpenAISwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +92,7 @@
 		D15D68D12CC060D000E57708 /* Snap2Spoon */ = {
 			isa = PBXGroup;
 			children = (
+				0720D47C2CD70B2F007A28C1 /* Info.plist */,
 				D15D68E12CC060F300E57708 /* Model */,
 				D15D68E02CC060E000E57708 /* ViewModel */,
 				D15D68E22CC0610600E57708 /* View */,
@@ -92,6 +116,8 @@
 		D15D68E02CC060E000E57708 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */,
+				0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */,
 				D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */,
 			);
 			path = ViewModel;
@@ -100,7 +126,10 @@
 		D15D68E12CC060F300E57708 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0720D4B72CD7650F007A28C1 /* Photo.swift */,
+				0720D4852CD7125A007A28C1 /* CameraError.swift */,
 				D15D68E32CC061FB00E57708 /* ExampleModel.swift */,
+				0720D4A32CD720A1007A28C1 /* Services */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,8 +137,9 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0720D4912CD713D6007A28C1 /* Homepage */,
+				0720D48F2CD713CB007A28C1 /* Camera */,
 				D15D68E92CC0629400E57708 /* ExampleView.swift */,
-				D14B50BD2CD1CA1A00929A23 /* Homepage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +158,11 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0720D48F2CD713CB007A28C1 /* Camera */,
+				0720D4912CD713D6007A28C1 /* Homepage */,
+				0720D4A32CD720A1007A28C1 /* Services */,
 			);
 			name = Snap2Spoon;
 			productName = Snap2Spoon;
@@ -158,6 +193,9 @@
 				Base,
 			);
 			mainGroup = D15D68C62CC060D000E57708;
+			packageReferences = (
+				0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+			);
 			productRefGroup = D15D68D02CC060D000E57708 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -185,11 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */,
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
+				0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
-				D14B50BE2CD1CA1A00929A23 /* Homepage.swift in Sources */,
+				0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */,
 				D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */,
+				0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */,
 				D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,8 +365,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Snap2Spoon/Preview Content\"";
+				DEVELOPMENT_TEAM = 84675W9PX8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snap2Spoon/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -352,8 +396,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Snap2Spoon/Preview Content\"";
+				DEVELOPMENT_TEAM = 84675W9PX8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snap2Spoon/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -394,6 +441,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git?ref=createwithswift.com";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0720D4AD2CD75718007A28C1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		0720D4AF2CD75730007A28C1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		0720D4B12CD7573D007A28C1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		0720D4B32CD7578B007A28C1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+		0720D4B52CD75A85007A28C1 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D15D68C72CC060D000E57708 /* Project object */;
 }

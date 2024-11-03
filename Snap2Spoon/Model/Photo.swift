@@ -1,3 +1,10 @@
+//
+//  Photo.swift
+//  Snap2Spoon
+//
+//  Created by Cory DeWitt on 11/3/24.
+//
+
 import UIKit
 
 struct Photo: Identifiable {
