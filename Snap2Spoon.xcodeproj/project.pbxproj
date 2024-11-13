@@ -47,6 +47,7 @@
 		0720D48F2CD713CB007A28C1 /* Camera */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Camera; sourceTree = "<group>"; };
 		0720D4912CD713D6007A28C1 /* Homepage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Homepage; sourceTree = "<group>"; };
 		0720D4A32CD720A1007A28C1 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		D15B8B8F2CE4BBBC000DEED9 /* LoadingPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LoadingPage; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D15B8B8F2CE4BBBC000DEED9 /* LoadingPage */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
 				0720D48F2CD713CB007A28C1 /* Camera */,
 				D15D68E92CC0629400E57708 /* ExampleView.swift */,
@@ -163,6 +165,7 @@
 				0720D48F2CD713CB007A28C1 /* Camera */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
 				0720D4A32CD720A1007A28C1 /* Services */,
+				D15B8B8F2CE4BBBC000DEED9 /* LoadingPage */,
 			);
 			name = Snap2Spoon;
 			productName = Snap2Spoon;
