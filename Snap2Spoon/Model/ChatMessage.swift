@@ -7,22 +7,6 @@
 
 import Foundation
 
-struct OpenAICompletionsBody: Encodable {
-    let model: String
-    let prompt: String
-    let temperature: Float?
-    let max_tokens: Int?
-}
-
-struct OpenAICompletionsResponse: Decodable {
-    let id: String
-    let choices: [OpenAICompletionsChoice]
-}
-
-struct OpenAICompletionsChoice: Decodable {
-    let text: String
-}
-
 struct ChatMessage: Identifiable {
     let id: String
     let content: String
@@ -33,4 +17,13 @@ struct ChatMessage: Identifiable {
 enum MessageSender {
     case me
     case gpt
+    
+    var role: String {
+        switch self {
+        case .me:
+            return "user"
+        case .gpt:
+            return "assistant"
+        }
+    }
 }
