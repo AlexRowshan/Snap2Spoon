@@ -34,7 +34,7 @@ struct CameraView: View {
                                     dismiss()
                                 }
                             } catch {
-                                // Error is handled by the ViewModel
+                                // Error handled by the ViewModel
                             }
                         }
                     }) {

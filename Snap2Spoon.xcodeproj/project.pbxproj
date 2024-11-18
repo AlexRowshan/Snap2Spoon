@@ -10,12 +10,13 @@
 		0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */; };
 		0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D4852CD7125A007A28C1 /* CameraError.swift */; };
 		0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */; };
-		0720D4AE2CD75718007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4AD2CD75718007A28C1 /* OpenAISwift */; };
-		0720D4B02CD75730007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4AF2CD75730007A28C1 /* OpenAISwift */; };
-		0720D4B22CD7573D007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4B12CD7573D007A28C1 /* OpenAISwift */; };
-		0720D4B42CD7578B007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4B32CD7578B007A28C1 /* OpenAISwift */; };
-		0720D4B62CD75A85007A28C1 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0720D4B52CD75A85007A28C1 /* OpenAISwift */; };
 		0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D4B72CD7650F007A28C1 /* Photo.swift */; };
+		076249A92CE4953800E6BA4F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 076249A82CE4953800E6BA4F /* Alamofire */; };
+		076249B32CE497A500E6BA4F /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B22CE497A200E6BA4F /* ChatViewModel.swift */; };
+		076249B52CE497B300E6BA4F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B42CE497AF00E6BA4F /* ChatView.swift */; };
+		076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B62CE4988000E6BA4F /* ChatMessage.swift */; };
+		076249C12CE4A0D900E6BA4F /* OpenAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */; };
+		076249C32CE4A57400E6BA4F /* CapturedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */; };
 		D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */; };
 		D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */; };
 		D15D68D52CC060D000E57708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D42CC060D000E57708 /* ContentView.swift */; };
@@ -26,12 +27,30 @@
 		D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E92CC0629400E57708 /* ExampleView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		076249BB2CE49C3200E6BA4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0720D47C2CD70B2F007A28C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		0720D4852CD7125A007A28C1 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
 		0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
 		0720D4B72CD7650F007A28C1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		076249B22CE497A200E6BA4F /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		076249B42CE497AF00E6BA4F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		076249B62CE4988000E6BA4F /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModels.swift; sourceTree = "<group>"; };
+		076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageViewModel.swift; sourceTree = "<group>"; };
 		D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scripto-2OR2v.ttf"; sourceTree = "<group>"; };
 		D15D68CF2CC060D000E57708 /* Snap2Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap2Spoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2SpoonApp.swift; sourceTree = "<group>"; };
@@ -54,17 +73,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0720D4B42CD7578B007A28C1 /* OpenAISwift in Frameworks */,
-				0720D4B62CD75A85007A28C1 /* OpenAISwift in Frameworks */,
-				0720D4B02CD75730007A28C1 /* OpenAISwift in Frameworks */,
-				0720D4B22CD7573D007A28C1 /* OpenAISwift in Frameworks */,
-				0720D4AE2CD75718007A28C1 /* OpenAISwift in Frameworks */,
+				076249A92CE4953800E6BA4F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076249BC2CE49C3B00E6BA4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D14B50C02CD1E47C00929A23 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				D15D68D12CC060D000E57708 /* Snap2Spoon */,
+				076249BC2CE49C3B00E6BA4F /* Frameworks */,
 				D15D68D02CC060D000E57708 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,6 +139,8 @@
 		D15D68E02CC060E000E57708 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */,
+				076249B22CE497A200E6BA4F /* ChatViewModel.swift */,
 				0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */,
 				0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */,
 				D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */,
@@ -126,6 +151,8 @@
 		D15D68E12CC060F300E57708 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */,
+				076249B62CE4988000E6BA4F /* ChatMessage.swift */,
 				0720D4B72CD7650F007A28C1 /* Photo.swift */,
 				0720D4852CD7125A007A28C1 /* CameraError.swift */,
 				D15D68E32CC061FB00E57708 /* ExampleModel.swift */,
@@ -137,6 +164,7 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				076249B42CE497AF00E6BA4F /* ChatView.swift */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
 				0720D48F2CD713CB007A28C1 /* Camera */,
 				D15D68E92CC0629400E57708 /* ExampleView.swift */,
@@ -154,6 +182,7 @@
 				D15D68CB2CC060D000E57708 /* Sources */,
 				D15D68CC2CC060D000E57708 /* Frameworks */,
 				D15D68CD2CC060D000E57708 /* Resources */,
+				076249BB2CE49C3200E6BA4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,7 +223,7 @@
 			);
 			mainGroup = D15D68C62CC060D000E57708;
 			packageReferences = (
-				0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				076249A72CE4953800E6BA4F /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = D15D68D02CC060D000E57708 /* Products */;
 			projectDirPath = "";
@@ -223,15 +252,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076249C12CE4A0D900E6BA4F /* OpenAIModels.swift in Sources */,
 				0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */,
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
 				0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
+				076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */,
+				076249B32CE497A500E6BA4F /* ChatViewModel.swift in Sources */,
+				076249B52CE497B300E6BA4F /* ChatView.swift in Sources */,
 				0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */,
 				D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */,
 				0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */,
 				D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */,
+				076249C32CE4A57400E6BA4F /* CapturedImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,41 +477,21 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+		076249A72CE4953800E6BA4F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/adamrushy/OpenAISwift.git?ref=createwithswift.com";
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.1;
+				minimumVersion = 5.10.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0720D4AD2CD75718007A28C1 /* OpenAISwift */ = {
+		076249A82CE4953800E6BA4F /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
-		};
-		0720D4AF2CD75730007A28C1 /* OpenAISwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
-		};
-		0720D4B12CD7573D007A28C1 /* OpenAISwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
-		};
-		0720D4B32CD7578B007A28C1 /* OpenAISwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
-		};
-		0720D4B52CD75A85007A28C1 /* OpenAISwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 0720D4AC2CD75718007A28C1 /* XCRemoteSwiftPackageReference "OpenAISwift" */;
-			productName = OpenAISwift;
+			package = 076249A72CE4953800E6BA4F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

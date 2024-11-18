@@ -9,12 +9,10 @@ import Foundation
 import Combine
 
 class ExampleViewModel: ObservableObject {
-    // Published property to notify the view of changes
     @Published var counterText: String = "0"
     
     private var model = ExampleModel()
 
-    // Methods to manipulate the counter
     func incrementCounter() {
         model.counter += 1
         updateCounterText()
@@ -25,7 +23,6 @@ class ExampleViewModel: ObservableObject {
         updateCounterText()
     }
 
-    // Update the counter text (View reacts to this)
     private func updateCounterText() {
         counterText = "\(model.counter)"
     }

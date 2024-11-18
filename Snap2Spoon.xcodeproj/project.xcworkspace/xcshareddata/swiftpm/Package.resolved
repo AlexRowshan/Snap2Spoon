@@ -1,13 +1,13 @@
 {
-  "originHash" : "7cc986648c50a8c47da81bb75c3cc95bffa5886ac65f7e88d996328e04202629",
+  "originHash" : "e8f130fe30ac6cdc940ef06ee1e8535e9f46ffee6aeead1722b9525562f6ce08",
   "pins" : [
     {
-      "identity" : "openaiswift.git?ref=createwithswift.com",
+      "identity" : "alamofire",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/adamrushy/OpenAISwift.git?ref=createwithswift.com",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
       "state" : {
-        "revision" : "ca66fb720d6ebb657601db5a0852b830ae310a4c",
-        "version" : "1.4.1"
+        "revision" : "e16d3481f5ed35f0472cb93350085853d754913f",
+        "version" : "5.10.1"
       }
     }
   ],
