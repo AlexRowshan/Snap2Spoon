@@ -17,6 +17,8 @@
 		076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B62CE4988000E6BA4F /* ChatMessage.swift */; };
 		076249C12CE4A0D900E6BA4F /* OpenAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */; };
 		076249C32CE4A57400E6BA4F /* CapturedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */; };
+		41523AEA2CED650500EB6758 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41523AE92CED64FF00EB6758 /* Recipe.swift */; };
+		41523AEC2CED652200EB6758 /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41523AEB2CED652000EB6758 /* RecipeView.swift */; };
 		D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */; };
 		D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */; };
 		D15D68D52CC060D000E57708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D42CC060D000E57708 /* ContentView.swift */; };
@@ -51,6 +53,8 @@
 		076249B62CE4988000E6BA4F /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModels.swift; sourceTree = "<group>"; };
 		076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageViewModel.swift; sourceTree = "<group>"; };
+		41523AE92CED64FF00EB6758 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		41523AEB2CED652000EB6758 /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 		D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scripto-2OR2v.ttf"; sourceTree = "<group>"; };
 		D15D68CF2CC060D000E57708 /* Snap2Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap2Spoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2SpoonApp.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 		D15D68E12CC060F300E57708 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41523AE92CED64FF00EB6758 /* Recipe.swift */,
 				076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */,
 				076249B62CE4988000E6BA4F /* ChatMessage.swift */,
 				0720D4B72CD7650F007A28C1 /* Photo.swift */,
@@ -164,6 +169,7 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				41523AEB2CED652000EB6758 /* RecipeView.swift */,
 				076249B42CE497AF00E6BA4F /* ChatView.swift */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
 				0720D48F2CD713CB007A28C1 /* Camera */,
@@ -256,11 +262,13 @@
 				0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */,
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
 				0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */,
+				41523AEC2CED652200EB6758 /* RecipeView.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
 				076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */,
 				076249B32CE497A500E6BA4F /* ChatViewModel.swift in Sources */,
 				076249B52CE497B300E6BA4F /* ChatView.swift in Sources */,
+				41523AEA2CED650500EB6758 /* Recipe.swift in Sources */,
 				0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */,
 				D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */,
 				0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */,
