@@ -3,6 +3,7 @@ import SwiftUI
 
 struct Homepage: View {
     @StateObject private var viewModel = HomepageViewModel()
+    @StateObject private var capturedImageViewModel = CapturedImageViewModel()
     
     var body: some View {
         NavigationView {
@@ -69,6 +70,16 @@ struct Homepage: View {
                             viewModel.showCamera = true
                         }) {
                             Text("Scan Now")
+                                .font(.largeTitle)
+                                .foregroundColor(.white)
+                                .padding()
+                                .frame(width: 220, height: 80)
+                                .background(Color(hex: "#7cd16b"))
+                                .cornerRadius(29)
+                                .shadow(color: .black.opacity(0.8), radius: 5, x: 0, y: 2)
+                        }
+                        NavigationLink(destination: ChatView()) {
+                            Text("GPT Button")
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
                                 .padding()

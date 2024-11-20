@@ -10,7 +10,8 @@ import SwiftUI
 struct CapturedImageView: View {
     let image: UIImage
     @Environment(\.dismiss) private var dismiss
-    
+    @StateObject private var viewModel = CapturedImageViewModel()
+
     var body: some View {
         NavigationView {
             VStack {
@@ -18,9 +19,27 @@ struct CapturedImageView: View {
                     .resizable()
                     .scaledToFit()
                     .padding()
-                
+
+                if viewModel.isLoading {
+                    ProgressView("Processing Image...")
+                        .padding()
+                }
+
+                if !viewModel.generatedText.isEmpty {
+                    ScrollView {
+                        Text(viewModel.generatedText)
+                            .padding()
+                    }
+                }
+
+                if let errorMessage = viewModel.errorMessage {
+                    Text("Error: \(errorMessage)")
+                        .foregroundColor(.red)
+                        .padding()
+                }
+
                 Button(action: {
-                    // PROCESSING LOGIC
+                    viewModel.processImage(image: image)
                 }) {
                     Text("Process Receipt")
                         .font(.headline)
@@ -32,6 +51,7 @@ struct CapturedImageView: View {
                         .padding(.horizontal)
                 }
                 .padding(.bottom)
+                .disabled(viewModel.isLoading)
             }
             .navigationTitle("Captured Receipt")
             .navigationBarTitleDisplayMode(.inline)

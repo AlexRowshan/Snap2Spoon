@@ -12,3 +12,4 @@ enum CameraError: Error {
     case captureError
     case authorizationDenied
 }
+ 
