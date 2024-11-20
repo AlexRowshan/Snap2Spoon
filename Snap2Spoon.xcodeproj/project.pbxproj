@@ -68,6 +68,7 @@
 		0720D48F2CD713CB007A28C1 /* Camera */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Camera; sourceTree = "<group>"; };
 		0720D4912CD713D6007A28C1 /* Homepage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Homepage; sourceTree = "<group>"; };
 		0720D4A32CD720A1007A28C1 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		D579E39B2CEDC5D70022DB7D /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		D15D68C62CC060D000E57708 = {
 			isa = PBXGroup;
 			children = (
+				D579E39B2CEDC5D70022DB7D /* Resources */,
 				D15D68D12CC060D000E57708 /* Snap2Spoon */,
 				076249BC2CE49C3B00E6BA4F /* Frameworks */,
 				D15D68D02CC060D000E57708 /* Products */,
