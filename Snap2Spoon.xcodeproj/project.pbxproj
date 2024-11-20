@@ -25,6 +25,7 @@
 		D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E32CC061FB00E57708 /* ExampleModel.swift */; };
 		D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */; };
 		D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E92CC0629400E57708 /* ExampleView.swift */; };
+		D579E3992CED6D610022DB7D /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E3982CED6D550022DB7D /* RecipeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +61,7 @@
 		D15D68E32CC061FB00E57708 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		D15D68E92CC0629400E57708 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		D579E3982CED6D550022DB7D /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -151,6 +153,7 @@
 		D15D68E12CC060F300E57708 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D579E3982CED6D550022DB7D /* RecipeModel.swift */,
 				076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */,
 				076249B62CE4988000E6BA4F /* ChatMessage.swift */,
 				0720D4B72CD7650F007A28C1 /* Photo.swift */,
@@ -257,6 +260,7 @@
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
 				0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
+				D579E3992CED6D610022DB7D /* RecipeModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
 				076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */,
 				076249B32CE497A500E6BA4F /* ChatViewModel.swift in Sources */,
