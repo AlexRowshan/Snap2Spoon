@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RecipeModel: Identifiable {
+struct RecipeModel: Identifiable, Codable  {
     var id: UUID
     let name:String
     let duration: String
@@ -23,6 +23,15 @@ struct RecipeModel: Identifiable {
         self.difficulty = difficulty
         self.ingredients = ingredients
         self.instructions = instructions
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case duration
+        case difficulty
+        case ingredients
+        case instructions
     }
 }
 

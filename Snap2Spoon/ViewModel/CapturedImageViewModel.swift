@@ -29,7 +29,7 @@ class CapturedImageViewModel: ObservableObject {
         self.errorMessage = nil
 
         let openAIService = OpenAIService()
-        openAIService.sendImageMessage(prompt: "What's in this image?", base64Image: base64Image)
+        openAIService.sendImageMessage(base64Image: base64Image)
             .receive(on: DispatchQueue.main)
             .sink { [weak self] completion in
                 self?.isLoading = false

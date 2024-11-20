@@ -55,74 +55,143 @@ class OpenAIService {
         .eraseToAnyPublisher()
     }
     
-    func sendImageMessage(prompt: String, base64Image: String) -> AnyPublisher<OpenAIChatResponse, Error> {
-        let messages: [[String: Any]] = [
-            [
-                "role": "user",
-                "content": [
+    func sendImageMessage(base64Image: String) -> AnyPublisher<OpenAIChatResponse, Error> {
+//        let prompt = ""
+//        if let path = Bundle.main.path(forResource: "prompt", ofType: "txt") {
+//            do {
+//                _ = try String(contentsOfFile: path, encoding: .utf8)
+//                
+//            } catch {
+//                print("Error loading prompt from file: \(error)")
+//            }
+//        }
+        let prompt = """
+        The picture provided is of a grocery receipt. You are an assistant whose job is to create recipes.
+        Your first task is to read through this recipe and create a list of ingredients strictly from the receipt.
+        There are a certain amount of ingredients that can be labeled as "Common Household Ingredients", which I have provided below.
+
+        Common Household Ingredients
+        "Pantry Basics:
+            •    Flour (all-purpose)
+            •    Sugar (granulated, brown)
+            •    Salt (table, kosher)
+            •    Black pepper
+            •    Baking soda
+            •    Baking powder
+            •    Vanilla extract
+            •    Cooking oils (vegetable, olive)
+            •    Vinegar (white, apple cider)
+        Seasonings/Spices:
+            •    Garlic powder
+            •    Onion powder
+            •    Cinnamon
+            •    Paprika
+            •    Red pepper flakes
+            •    Italian seasoning
+            •    Bay leaves
+            •    Dried oregano
+            •    Dried basil
+            •    Ground cumin
+        Refrigerator Staples:
+            •    Butter
+            •    Eggs
+            •    Milk
+            •    Mustard
+            •    Mayonnaise
+            •    Ketchup
+            •    Soy sauce
+            •    Hot sauce
+            •    Worcestershire sauce
+        Basic Produce:
+            •    Garlic
+            •    Onions
+            •    Lemons/Limes (these are borderline - some might not always have them)
+
+        "
+
+        Create a combined list of all of the items from the receipt and this Common Household Ingredients list. Do not print out this list.
+
+        Now, please generate an array of 5 recipes in JSON format matching the following structure:
+
+        {
+          "name": "Recipe Name",
+          "duration": "Cooking Time in minutes",
+          "difficulty": "Easy/Medium/Hard",
+          "ingredients": ["Ingredient 1", "Ingredient 2", "..."],
+          "instructions": ["Step 1", "Step 2", "..."]
+        }
+
+        Please ensure the JSON is valid and can be parsed by a JSON decoder. These JSON recipes should be the only output provided. Make sure the instructions are detailed. 
+        """
+
+            let messages: [[String: Any]] = [
                     [
-                        "type": "text",
-                        "text": prompt
-                    ],
-                    [
-                        "type": "image_url",
-                        "image_url": [
-                            "url": "data:image/jpeg;base64,\(base64Image)"
+                    "role": "user",
+                    "content": [
+                        [
+                            "type": "text",
+                            "text": prompt
+                        ],
+                        [
+                            "type": "image_url",
+                            "image_url": [
+                                "url": "data:image/jpeg;base64,\(base64Image)"
+                            ]
                         ]
                     ]
                 ]
             ]
-        ]
-
-        let parameters: [String: Any] = [
-            "model": "gpt-4o-mini",
-            "messages": messages,
-            "max_tokens": 300
-        ]
-
-        let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(Constants.openAIAPIKey)",
-            "Content-Type": "application/json"
-        ]
-
-        return Future { promise in
-            let request = AF.request(
-                self.otherURL,
-                method: .post,
-                parameters: parameters,
-                encoding: JSONEncoding.default,
-                headers: headers
-            )
-
-            request.responseData { response in
-                print("Request URL: \(self.baseUrl)")
-                print("Request Headers: \(headers)")
-                print("Request Parameters: \(parameters)")
-
-                if let data = response.data, let responseString = String(data: data, encoding: .utf8) {
-                    print("Response Data: \(responseString)")
-                }
-
-                if let error = response.error {
-                    print("Request Error: \(error)")
-                }
-
-                switch response.result {
-                case .success(let data):
-                    do {
-                        let decodedResponse = try JSONDecoder().decode(OpenAIChatResponse.self, from: data)
-                        promise(.success(decodedResponse))
-                    } catch {
-                        print("Decoding Error: \(error)")
+            
+            let parameters: [String: Any] = [
+                "model": "gpt-4o-mini",
+                "messages": messages,
+                "max_tokens": 300
+            ]
+            
+            let headers: HTTPHeaders = [
+                "Authorization": "Bearer \(Constants.openAIAPIKey)",
+                "Content-Type": "application/json"
+            ]
+            
+            return Future { promise in
+                let request = AF.request(
+                    self.otherURL,
+                    method: .post,
+                    parameters: parameters,
+                    encoding: JSONEncoding.default,
+                    headers: headers
+                )
+                
+                request.responseData { response in
+                    print("Request URL: \(self.baseUrl)")
+                    print("Request Headers: \(headers)")
+                    print("Request Parameters: \(parameters)")
+                    
+                    if let data = response.data, let responseString = String(data: data, encoding: .utf8) {
+                        print("Response Data: \(responseString)")
+                    }
+                    
+                    if let error = response.error {
+                        print("Request Error: \(error)")
+                    }
+                    
+                    switch response.result {
+                    case .success(let data):
+                        do {
+                            let decodedResponse = try JSONDecoder().decode(OpenAIChatResponse.self, from: data)
+                            promise(.success(decodedResponse))
+                        } catch {
+                            print("Decoding Error: \(error)")
+                            promise(.failure(error))
+                        }
+                    case .failure(let error):
                         promise(.failure(error))
                     }
-                case .failure(let error):
-                    promise(.failure(error))
                 }
             }
+            .eraseToAnyPublisher()
         }
-        .eraseToAnyPublisher()
+        
+        
     }
 
-
-}
