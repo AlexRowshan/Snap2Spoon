@@ -13,38 +13,54 @@ struct CameraView: View {
                     .ignoresSafeArea()
                 
                 VStack {
+                    // Top Bar
                     HStack {
                         Button(action: { dismiss() }) {
-                            Image(systemName: "xmark")
-                                .font(.title)
+                            Image(systemName: "xmark.circle.fill")
+                                .font(.system(size: 30))
                                 .foregroundColor(.white)
-                                .padding()
+                                .shadow(radius: 2)
                         }
+                        .padding()
+                        
                         Spacer()
                     }
                     
                     Spacer()
                     
-                    Button(action: {
-                        Task {
-                            do {
-                                try await viewModel.capturePhoto()
-                                if let image = viewModel.photo {
-                                    onPhotoCaptured(image)
-                                    dismiss()
+                    // Camera Controls
+                    VStack(spacing: 20) {
+                        // Capture Button
+                        Button(action: {
+                            Task {
+                                do {
+                                    try await viewModel.capturePhoto()
+                                    if let image = viewModel.photo {
+                                        onPhotoCaptured(image)
+                                        dismiss()
+                                    }
+                                } catch {
+                                    // Error handled by the ViewModel
                                 }
-                            } catch {
-                                // Error handled by the ViewModel
+                            }
+                        }) {
+                            ZStack {
+                                Circle()
+                                    .fill(Color.white)
+                                    .frame(width: 80, height: 80)
+                                Circle()
+                                    .stroke(Color.white, lineWidth: 4)
+                                    .frame(width: 70, height: 70)
                             }
                         }
-                    }) {
-                        Image(systemName: "camera.circle.fill")
-                            .resizable()
-                            .frame(width: 80, height: 80)
-                            .foregroundStyle(.white)
                     }
                     .padding(.bottom, 30)
                 }
+            } else {
+                Color.black
+                    .ignoresSafeArea()
+                ProgressView()
+                    .tint(.white)
             }
         }
         .task {
@@ -69,6 +85,7 @@ struct CameraView: View {
         }
     }
 }
+
 struct PreviewViewWrapper: UIViewRepresentable {
     var session: AVCaptureSession
     

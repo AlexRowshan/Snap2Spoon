@@ -78,16 +78,16 @@ struct Homepage: View {
                                 .cornerRadius(29)
                                 .shadow(color: .black.opacity(0.8), radius: 5, x: 0, y: 2)
                         }
-                        NavigationLink(destination: ChatView()) {
-                            Text("GPT Button")
-                                .font(.largeTitle)
-                                .foregroundColor(.white)
-                                .padding()
-                                .frame(width: 220, height: 80)
-                                .background(Color(hex: "#7cd16b"))
-                                .cornerRadius(29)
-                                .shadow(color: .black.opacity(0.8), radius: 5, x: 0, y: 2)
-                        }
+//                        NavigationLink(destination: ChatView()) {
+//                            Text("GPT Button")
+//                                .font(.largeTitle)
+//                                .foregroundColor(.white)
+//                                .padding()
+//                                .frame(width: 220, height: 80)
+//                                .background(Color(hex: "#7cd16b"))
+//                                .cornerRadius(29)
+//                                .shadow(color: .black.opacity(0.8), radius: 5, x: 0, y: 2)
+//                        }
                     }
                     
                     Spacer().frame(height: 70)
