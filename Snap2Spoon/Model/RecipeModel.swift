@@ -8,7 +8,7 @@
 import Foundation
 
 struct RecipeModel: Identifiable, Codable  {
-    var id: UUID
+    var id: UUID? = UUID()
     let name:String
     let duration: String
     let difficulty: String

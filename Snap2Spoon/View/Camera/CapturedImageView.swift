@@ -1,10 +1,3 @@
-//
-//  CapturedImageView.swift
-//  Snap2Spoon
-//
-//  Created by Cory DeWitt on 11/3/24.
-//
-
 import SwiftUI
 
 struct CapturedImageView: View {
@@ -15,29 +8,34 @@ struct CapturedImageView: View {
     var body: some View {
         NavigationView {
             VStack {
+                // Display the captured image at the top
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFit()
                     .padding()
 
+                // Show a loading indicator while processing the image
                 if viewModel.isLoading {
                     ProgressView("Processing Image...")
                         .padding()
                 }
 
-                if !viewModel.generatedText.isEmpty {
+                // Display the recipes if available
+                if !viewModel.recipes.isEmpty {
                     ScrollView {
-                        Text(viewModel.generatedText)
+                        RecipeView(recipes: viewModel.recipes)  // Use RecipeView to display generated recipes
                             .padding()
                     }
                 }
 
+                // Display an error message if any
                 if let errorMessage = viewModel.errorMessage {
                     Text("Error: \(errorMessage)")
                         .foregroundColor(.red)
                         .padding()
                 }
 
+                // Button to start processing the image
                 Button(action: {
                     viewModel.processImage(image: image)
                 }) {

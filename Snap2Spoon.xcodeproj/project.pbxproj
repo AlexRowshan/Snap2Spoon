@@ -26,6 +26,7 @@
 		D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */; };
 		D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E92CC0629400E57708 /* ExampleView.swift */; };
 		D579E3992CED6D610022DB7D /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E3982CED6D550022DB7D /* RecipeModel.swift */; };
+		D579E3A02CEE5A480022DB7D /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E39F2CEE5A440022DB7D /* RecipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +63,7 @@
 		D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		D15D68E92CC0629400E57708 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
 		D579E3982CED6D550022DB7D /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		D579E39F2CEE5A440022DB7D /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -169,6 +171,7 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D579E39F2CEE5A440022DB7D /* RecipeView.swift */,
 				076249B42CE497AF00E6BA4F /* ChatView.swift */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
 				0720D48F2CD713CB007A28C1 /* Camera */,
@@ -261,6 +264,7 @@
 				0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */,
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
 				0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */,
+				D579E3A02CEE5A480022DB7D /* RecipeView.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
 				D579E3992CED6D610022DB7D /* RecipeModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
