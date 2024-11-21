@@ -45,13 +45,13 @@ struct CameraView: View {
                             }
                         }) {
                             ZStack {
-                                Circle()
-                                    .fill(Color.white)
-                                    .frame(width: 80, height: 80)
-                                Circle()
-                                    .stroke(Color.white, lineWidth: 4)
-                                    .frame(width: 70, height: 70)
-                            }
+                                                    Circle()
+                                                        .fill(Color.white)
+                                                        .frame(width: 80, height: 80)
+                                                    Image(systemName: "camera")
+                                                        .font(.system(size: 40))
+                                                        .foregroundColor(.black)
+                                                }
                         }
                     }
                     .padding(.bottom, 30)
