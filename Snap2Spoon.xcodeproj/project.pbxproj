@@ -70,6 +70,7 @@
 		0720D48F2CD713CB007A28C1 /* Camera */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Camera; sourceTree = "<group>"; };
 		0720D4912CD713D6007A28C1 /* Homepage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Homepage; sourceTree = "<group>"; };
 		0720D4A32CD720A1007A28C1 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		D16534102CEECD6900A127DA /* LoadingPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LoadingPage; sourceTree = "<group>"; };
 		D579E39B2CEDC5D70022DB7D /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -171,6 +172,7 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D16534102CEECD6900A127DA /* LoadingPage */,
 				D579E39F2CEE5A440022DB7D /* RecipeView.swift */,
 				076249B42CE497AF00E6BA4F /* ChatView.swift */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
@@ -200,6 +202,7 @@
 				0720D48F2CD713CB007A28C1 /* Camera */,
 				0720D4912CD713D6007A28C1 /* Homepage */,
 				0720D4A32CD720A1007A28C1 /* Services */,
+				D16534102CEECD6900A127DA /* LoadingPage */,
 			);
 			name = Snap2Spoon;
 			productName = Snap2Spoon;

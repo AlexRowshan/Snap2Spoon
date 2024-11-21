@@ -17,13 +17,7 @@ struct CapturedImageView: View {
                     Spacer()
                     
                     if viewModel.isLoading {
-                        VStack(spacing: 20) {
-                            ProgressView()
-                                .scaleEffect(1.5)
-                            Text("Processing Receipt...")
-                                .font(.headline)
-                                .foregroundColor(.gray)
-                        }
+                        LoadingPageView()
                     } else if image == nil {
                         VStack(spacing: 20) {
                             Image(systemName: "camera.fill")
@@ -86,7 +80,6 @@ struct CapturedImageView: View {
                     viewModel.processImage(image: image)
                 }
             }
-            // Instead of using onChange, use a publisher in the ViewModel
             .onReceive(viewModel.$recipes) { recipes in
                 if !recipes.isEmpty && !navigateToRecipe {
                     navigateToRecipe = true
