@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */; };
+		0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D4852CD7125A007A28C1 /* CameraError.swift */; };
+		0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */; };
+		0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0720D4B72CD7650F007A28C1 /* Photo.swift */; };
+		076249A92CE4953800E6BA4F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 076249A82CE4953800E6BA4F /* Alamofire */; };
+		076249B32CE497A500E6BA4F /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B22CE497A200E6BA4F /* ChatViewModel.swift */; };
+		076249B52CE497B300E6BA4F /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B42CE497AF00E6BA4F /* ChatView.swift */; };
+		076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249B62CE4988000E6BA4F /* ChatMessage.swift */; };
+		076249C12CE4A0D900E6BA4F /* OpenAIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */; };
+		076249C32CE4A57400E6BA4F /* CapturedImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */; };
+		D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */; };
 		D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */; };
 		D15D68D52CC060D000E57708 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68D42CC060D000E57708 /* ContentView.swift */; };
 		D15D68D72CC060D300E57708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15D68D62CC060D300E57708 /* Assets.xcassets */; };
@@ -14,9 +25,35 @@
 		D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E32CC061FB00E57708 /* ExampleModel.swift */; };
 		D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */; };
 		D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15D68E92CC0629400E57708 /* ExampleView.swift */; };
+		D579E3992CED6D610022DB7D /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E3982CED6D550022DB7D /* RecipeModel.swift */; };
+		D579E3A02CEE5A480022DB7D /* RecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D579E39F2CEE5A440022DB7D /* RecipeView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		076249BB2CE49C3200E6BA4F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0720D47C2CD70B2F007A28C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		0720D4852CD7125A007A28C1 /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
+		0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewModel.swift; sourceTree = "<group>"; };
+		0720D4B72CD7650F007A28C1 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		076249B22CE497A200E6BA4F /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		076249B42CE497AF00E6BA4F /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		076249B62CE4988000E6BA4F /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIModels.swift; sourceTree = "<group>"; };
+		076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturedImageViewModel.swift; sourceTree = "<group>"; };
+		D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scripto-2OR2v.ttf"; sourceTree = "<group>"; };
 		D15D68CF2CC060D000E57708 /* Snap2Spoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snap2Spoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap2SpoonApp.swift; sourceTree = "<group>"; };
 		D15D68D42CC060D000E57708 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,23 +62,51 @@
 		D15D68E32CC061FB00E57708 /* ExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleModel.swift; sourceTree = "<group>"; };
 		D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewModel.swift; sourceTree = "<group>"; };
 		D15D68E92CC0629400E57708 /* ExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleView.swift; sourceTree = "<group>"; };
+		D579E3982CED6D550022DB7D /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		D579E39F2CEE5A440022DB7D /* RecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0720D48F2CD713CB007A28C1 /* Camera */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Camera; sourceTree = "<group>"; };
+		0720D4912CD713D6007A28C1 /* Homepage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Homepage; sourceTree = "<group>"; };
+		0720D4A32CD720A1007A28C1 /* Services */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Services; sourceTree = "<group>"; };
+		D16534102CEECD6900A127DA /* LoadingPage */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LoadingPage; sourceTree = "<group>"; };
+		D579E39B2CEDC5D70022DB7D /* Resources */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Resources; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D15D68CC2CC060D000E57708 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076249A92CE4953800E6BA4F /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076249BC2CE49C3B00E6BA4F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14B50C02CD1E47C00929A23 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D14B50C12CD1E4A100929A23 /* Scripto-2OR2v.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		D15D68C62CC060D000E57708 = {
 			isa = PBXGroup;
 			children = (
+				D579E39B2CEDC5D70022DB7D /* Resources */,
 				D15D68D12CC060D000E57708 /* Snap2Spoon */,
+				076249BC2CE49C3B00E6BA4F /* Frameworks */,
 				D15D68D02CC060D000E57708 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,12 +122,14 @@
 		D15D68D12CC060D000E57708 /* Snap2Spoon */ = {
 			isa = PBXGroup;
 			children = (
+				0720D47C2CD70B2F007A28C1 /* Info.plist */,
 				D15D68E12CC060F300E57708 /* Model */,
 				D15D68E02CC060E000E57708 /* ViewModel */,
 				D15D68E22CC0610600E57708 /* View */,
 				D15D68D42CC060D000E57708 /* ContentView.swift */,
 				D15D68D22CC060D000E57708 /* Snap2SpoonApp.swift */,
 				D15D68D62CC060D300E57708 /* Assets.xcassets */,
+				D14B50C02CD1E47C00929A23 /* Fonts */,
 				D15D68D82CC060D300E57708 /* Preview Content */,
 			);
 			path = Snap2Spoon;
@@ -79,6 +146,10 @@
 		D15D68E02CC060E000E57708 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				076249C22CE4A56E00E6BA4F /* CapturedImageViewModel.swift */,
+				076249B22CE497A200E6BA4F /* ChatViewModel.swift */,
+				0720D48D2CD713B4007A28C1 /* HomepageViewModel.swift */,
+				0720D47D2CD70C42007A28C1 /* CameraViewModel.swift */,
 				D15D68E52CC0625B00E57708 /* ExampleViewModel.swift */,
 			);
 			path = ViewModel;
@@ -87,7 +158,13 @@
 		D15D68E12CC060F300E57708 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D579E3982CED6D550022DB7D /* RecipeModel.swift */,
+				076249C02CE4A0CA00E6BA4F /* OpenAIModels.swift */,
+				076249B62CE4988000E6BA4F /* ChatMessage.swift */,
+				0720D4B72CD7650F007A28C1 /* Photo.swift */,
+				0720D4852CD7125A007A28C1 /* CameraError.swift */,
 				D15D68E32CC061FB00E57708 /* ExampleModel.swift */,
+				0720D4A32CD720A1007A28C1 /* Services */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -95,6 +172,11 @@
 		D15D68E22CC0610600E57708 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D16534102CEECD6900A127DA /* LoadingPage */,
+				D579E39F2CEE5A440022DB7D /* RecipeView.swift */,
+				076249B42CE497AF00E6BA4F /* ChatView.swift */,
+				0720D4912CD713D6007A28C1 /* Homepage */,
+				0720D48F2CD713CB007A28C1 /* Camera */,
 				D15D68E92CC0629400E57708 /* ExampleView.swift */,
 			);
 			path = View;
@@ -110,10 +192,17 @@
 				D15D68CB2CC060D000E57708 /* Sources */,
 				D15D68CC2CC060D000E57708 /* Frameworks */,
 				D15D68CD2CC060D000E57708 /* Resources */,
+				076249BB2CE49C3200E6BA4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0720D48F2CD713CB007A28C1 /* Camera */,
+				0720D4912CD713D6007A28C1 /* Homepage */,
+				0720D4A32CD720A1007A28C1 /* Services */,
+				D16534102CEECD6900A127DA /* LoadingPage */,
 			);
 			name = Snap2Spoon;
 			productName = Snap2Spoon;
@@ -144,6 +233,9 @@
 				Base,
 			);
 			mainGroup = D15D68C62CC060D000E57708;
+			packageReferences = (
+				076249A72CE4953800E6BA4F /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = D15D68D02CC060D000E57708 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D15D68DA2CC060D300E57708 /* Preview Assets.xcassets in Resources */,
+				D14B50C22CD1E4A100929A23 /* Scripto-2OR2v.ttf in Resources */,
 				D15D68D72CC060D300E57708 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,11 +263,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076249C12CE4A0D900E6BA4F /* OpenAIModels.swift in Sources */,
+				0720D4B82CD7650F007A28C1 /* Photo.swift in Sources */,
 				D15D68D52CC060D000E57708 /* ContentView.swift in Sources */,
+				0720D4862CD7125E007A28C1 /* CameraError.swift in Sources */,
+				D579E3A02CEE5A480022DB7D /* RecipeView.swift in Sources */,
 				D15D68E62CC0625B00E57708 /* ExampleViewModel.swift in Sources */,
+				D579E3992CED6D610022DB7D /* RecipeModel.swift in Sources */,
 				D15D68D32CC060D000E57708 /* Snap2SpoonApp.swift in Sources */,
+				076249B72CE4988500E6BA4F /* ChatMessage.swift in Sources */,
+				076249B32CE497A500E6BA4F /* ChatViewModel.swift in Sources */,
+				076249B52CE497B300E6BA4F /* ChatView.swift in Sources */,
+				0720D47E2CD70C48007A28C1 /* CameraViewModel.swift in Sources */,
 				D15D68E42CC061FB00E57708 /* ExampleModel.swift in Sources */,
+				0720D48E2CD713BC007A28C1 /* HomepageViewModel.swift in Sources */,
 				D15D68EA2CC0629400E57708 /* ExampleView.swift in Sources */,
+				076249C32CE4A57400E6BA4F /* CapturedImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +412,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Snap2Spoon/Preview Content\"";
+				DEVELOPMENT_TEAM = J2792GVX8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snap2Spoon/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -336,8 +443,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Snap2Spoon/Preview Content\"";
+				DEVELOPMENT_TEAM = J2792GVX8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Snap2Spoon/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app needs camera access to take photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -378,6 +488,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		076249A72CE4953800E6BA4F /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		076249A82CE4953800E6BA4F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 076249A72CE4953800E6BA4F /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D15D68C72CC060D000E57708 /* Project object */;
 }
