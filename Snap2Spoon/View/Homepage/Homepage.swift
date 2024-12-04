@@ -8,7 +8,7 @@ struct Homepage: View {
     var body: some View {
         NavigationView {
             ZStack {
-                LinearGradient(gradient: Gradient(colors: [Color(hex: "#7cd16b"), Color.white]),
+                LinearGradient(gradient: Gradient(colors: [Color(hex: "#8AC36F"), Color.white]),
                                startPoint: .top,
                                endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
@@ -16,43 +16,55 @@ struct Homepage: View {
                 VStack {
                     Spacer()
                     
-                    VStack(spacing: 8) {
+                    VStack(spacing: 4) {
                         Text("Turn your receipts to recipes!")
-                            .font(.custom("ArialMT", size: 20))
+                            .font(.custom("Avenir Next", size: 18))
                             .foregroundColor(.white)
-                            .fontWeight(.bold)
+                            .italic()
                         
+                        // underline
+                        Rectangle()
+                            .fill(Color(hex: "#7FBD61").opacity(0.5))
+                            .frame(height: 8)
+                            .offset(y: 52)
+                            .frame(maxWidth: 280)
+                        
+                        // snap2spoon logo
                         ZStack(alignment: .bottom) {
                             Text("Snap2Spoon")
-                                .font(.custom("Scripto", size: 50))
+                                .font(.custom("Scripto", size: 47))
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .padding(.bottom, 5)
                             
-                            Rectangle()
-                                .fill(Color(hex: "#7cd16b"))
-                                .frame(height: 8)
-                                .offset(y: 2)
-                                .frame(maxWidth: 260)
+//                            Rectangle()
+//                                .fill(Color(hex: "#7cd16b").opacity(0.5))
+//                                .frame(height: 8)
+//                                .offset(y: -5)
+//                                .frame(maxWidth: 260)
                         }
                     }
                     
-                    Spacer().frame(height: 40)
+                    Spacer().frame(height:30)
                     
                     ZStack {
                         Image("receipt")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 390, height: 300)
+                            .frame(width: 590, height: 400)
+                            // needs tilt
+                            .rotationEffect(.degrees(7))
+                            .offset(x: 25)
                         
                         Image("shopping_cart")
                             .resizable()
                             .frame(width: 180, height: 180)
                             .offset(x: 0, y: -40)
+                            .rotationEffect(.degrees(5))
                     }
                     .frame(maxWidth: .infinity)
                     
-                    Spacer()
+                    Spacer().frame(height:15)
                     
                     if let image = viewModel.capturedImage {
                         NavigationLink(destination: ImageView(image: image)) {
@@ -70,13 +82,17 @@ struct Homepage: View {
                             viewModel.showCamera = true
                         }) {
                             Text("Scan Now")
+                                .font(.custom("Avenir", size: 30))
                                 .font(.largeTitle)
                                 .foregroundColor(.white)
                                 .padding()
-                                .frame(width: 220, height: 80)
-                                .background(Color(hex: "#7cd16b"))
-                                .cornerRadius(29)
-                                .shadow(color: .black.opacity(0.8), radius: 5, x: 0, y: 2)
+                                .frame(width: 180, height: 80)
+                                .background(Color(hex: "#7FBD61").opacity(0.72))
+                                .cornerRadius(15)
+                                .shadow(color: .black.opacity(0.1), radius: 35)
+                                .bold()
+                            
+                            
                         }
 //                        NavigationLink(destination: ChatView()) {
 //                            Text("GPT Button")
