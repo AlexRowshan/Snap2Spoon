@@ -17,7 +17,7 @@ struct Homepage: View {
                     Spacer()
                     
                     VStack(spacing: 8) {
-                        Text("Turn your receipts to recipes!")
+                        Text("Turn your receipts to recipes")
                             .font(.custom("ArialMT", size: 20))
                             .foregroundColor(.white)
                             .fontWeight(.bold)
