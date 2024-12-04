@@ -17,7 +17,7 @@ struct LoadingPageView: View {
             VStack {
                 // Header
                 Text("Snap2Spoon")
-                    .font(.custom("SnellRoundhand", size: 32))
+                    .font(.custom("Scripto", size: 32))
                     .foregroundColor(Color(hex: "#7cd16b"))
                     .padding(.top, 40)
                     .fontWeight(.bold)

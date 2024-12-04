@@ -1,16 +1,15 @@
-cat > Snap2Spoon/Info.plist << 'EOL'
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>CFBundleIdentifier</key>
-    <string></string>
+    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
     <key>UIAppFonts</key>
     <array>
         <string>Scripto-2OR2v.ttf</string>
     </array>
     <key>CFBundleExecutable</key>
-    <string></string>
+    <string>$(EXECUTABLE_NAME)</string>
     <key>NSAppTransportSecurity</key>
     <dict>
         <key>NSAllowsArbitraryLoads</key>
@@ -20,4 +19,3 @@ cat > Snap2Spoon/Info.plist << 'EOL'
     <true/>
 </dict>
 </plist>
-EOL
