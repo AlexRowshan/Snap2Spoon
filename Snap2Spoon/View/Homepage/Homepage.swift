@@ -24,7 +24,7 @@ struct Homepage: View {
                         
                         ZStack(alignment: .bottom) {
                             Text("Snap2Spoon")
-                                .font(.custom("SnellRoundhand", size: 50))
+                                .font(.custom("Scripto", size: 50))
                                 .fontWeight(.bold)
                                 .foregroundColor(.white)
                                 .padding(.bottom, 5)
